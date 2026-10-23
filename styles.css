@@ -18,3 +18,13 @@
 .experience-card .company-brand+p{margin:6px 0 17px}
 .experience-card .text-link{margin-top:auto}
 @media(max-width:560px){.experience-card{min-height:0;padding:24px}.experience-card .card-top{margin-bottom:16px}.experience-card .company-brand h3{font-size:34px}.experience-card .datev-logo{height:72px}.experience-card .zucchetti-logo{height:48px}}
+
+/* Crop only the white margins inside user-supplied company JPGs. */
+.experience-card .company-logo-frame{position:relative;display:block;overflow:hidden;flex-shrink:0;align-self:flex-start}
+.experience-card .company-logo-frame .company-logo{position:absolute;display:block;max-width:none;max-height:none;margin:0;object-fit:fill;mix-blend-mode:normal}
+.experience-card .datev-frame{width:108px;height:100px}
+.experience-card .datev-frame .datev-logo{width:204px;height:136px;left:-49px;top:-17px}
+.experience-card .zucchetti-frame{width:244px;height:66px}
+.experience-card .zucchetti-frame .zucchetti-logo{width:244px;height:136px;left:0;top:-35px}
+.experience-card .company-brand{gap:9px}
+@media(max-width:560px){.experience-card .datev-frame{width:100px;height:94px}.experience-card .datev-frame .datev-logo{width:190px;height:127px;left:-46px;top:-15px}.experience-card .zucchetti-frame{width:214px;height:60px}.experience-card .zucchetti-frame .zucchetti-logo{width:214px;height:119px;left:0;top:-30px}}
