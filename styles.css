@@ -4,3 +4,17 @@
 
 /* Marchi nelle schede aziendali */
 .company-brand{display:flex;align-items:center;gap:19px;margin:12px 0 4px;flex-wrap:wrap}.company-brand h3{margin:0}.company-logo{display:block;width:96px;height:88px;object-fit:contain;mix-blend-mode:multiply;flex-shrink:0}.zucchetti-logo{width:145px;height:72px}.datev-logo{width:78px;height:88px}.experience-card{min-height:375px}.company-brand + p{margin-top:8px}@media(max-width:560px){.company-brand{gap:12px}.company-brand h3{font-size:36px}.company-logo{width:68px;height:72px}.zucchetti-logo{width:115px;height:64px}}
+
+/* Schede aziendali: disposizione compatta con marchio sopra il nome */
+.experience-card{justify-content:flex-start;min-height:340px;padding:25px 32px 30px}
+.experience-card .card-top{margin-bottom:20px}
+.experience-card .card-body{display:flex;flex-direction:column;align-items:flex-start}
+.experience-card .card-index{margin-bottom:10px}
+.experience-card .company-brand{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:0 0 7px;width:100%}
+.experience-card .company-brand h3{margin:0;font-size:38px;line-height:1.18}
+.experience-card .company-logo{width:auto;height:65px;max-width:min(240px,100%);object-fit:contain;object-position:left center}
+.experience-card .datev-logo{height:82px}
+.experience-card .zucchetti-logo{height:52px;max-width:min(250px,100%)}
+.experience-card .company-brand+p{margin:6px 0 17px}
+.experience-card .text-link{margin-top:auto}
+@media(max-width:560px){.experience-card{min-height:0;padding:24px}.experience-card .card-top{margin-bottom:16px}.experience-card .company-brand h3{font-size:34px}.experience-card .datev-logo{height:72px}.experience-card .zucchetti-logo{height:48px}}
